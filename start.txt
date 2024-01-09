@@ -1,1 +1,22 @@
-#this is the start of the program
+#Created by G-Lumauig
+Jan 2024
+
+1. Purpose of the scripts are separated by folders
+	a. Juniper ACL Count
+	b. HVAC
+
+2. Inside each folder, there will be 2 additional folders
+	a. agent_based - This is where the custom plugins is located (python file)
+	b. plugins - This is where the custom graph is located (python file) 
+
+
+
+
+### commands to troubleshoot custom plugins
+### should be within the omd instance
+
+cmk --debug -II --detect-plugins=<plugin_name>
+cmk -II --detect-plugins=<plugin_name>
+cmk -vv --debug --detect-plugins=<plugin_name>
+
+
